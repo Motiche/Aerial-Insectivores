@@ -15,6 +15,8 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
@@ -22,411 +24,279 @@
     ></script>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#"
-                >Homepage</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="index.html#Birds">Birds</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="navbarDropdownMenuLink"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Ecology
-              </a>
-              <ul
-                class="dropdown-menu"
-                aria-labelledby="navbarDropdownMenuLink"
-              >
-                <li><a class="dropdown-item" href="#">Conservation</a></li>
-                <li><a class="dropdown-item" href="#">Population trend</a></li>
-                <li>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Take an action</a>
-            </li>
-          </ul>
-        </div>
+    <header-component></header-component>
+    <main>
+      <!-- Banner -->
+      <div class="banner">
+        <img
+          class="d-none d-md-block"
+          src="images/banner-sky-desk.png"
+          alt=""
+          style="padding-left: 0px; padding-right: 0px; width: 100%"
+        />
+        <img
+          class="d-md-none"
+          src="images/banner-mobile.png"
+          alt=""
+          style="padding-left: 0px; padding-right: 0px; width: 100%"
+        />
       </div>
-    </nav>
+      <br />
+      <!-- Banner End-->
 
-    <div class="">
-      <img
-        class="d-none d-md-block"
-        src="images/banner-sky-desk.png"
-        alt=""
-        style="padding-left: 0px; padding-right: 0px; width: 100%"
-      />
-      <img
-        class="d-md-none"
-        src="images/banner-mobile.png"
-        alt=""
-        style="padding-left: 0px; padding-right: 0px; width: 100%"
-      />
-    </div>
-    <br />
-    <div class="container">
-      <h1>Aerial Insectivores of Iran</h1>
-      <hr class="rounded" />
-      <div class="row">
-        <div class="info col-md">
-          <h3>What are they?</h3>
-          <p>
-            Aerial insectivore birds are a fascinating group of birds that have
-            adapted to feed on insects while in flight. These birds are known
-            for their remarkable agility and speed, which allows them to catch
-            their prey in mid-air.
-          </p>
-          <h3>In Iran</h3>
-          <p>
-            Many of these birds are found in Iran, including Swifts, Swallows,
-            Martins, Bee-eaters, Flycatchers and Warblers.
-          </p>
-          <h3>Population Trend</h3>
-          <p>
-            Unfortunately, the population of aerial insectivore birds worldwide
-            is declining at an alarming rate. According to a study published in
-            the journal Science, aerial insectivores have experienced a
-            population decline of 53% since the 1970s. This trend is
-            particularly concerning, as aerial insectivores are important
-            indicators of ecosystem health.
-          </p>
-        </div>
-        <div class="info col-md">
-          <h3>The Conservation and threats</h3>
-          <p>
-            There are several factors that are contributing to the decline of
-            aerial insectivore birds. Habitat loss and fragmentation are major
-            threats, as these birds rely on intact ecosystems to find the
-            insects they need to survive. Climate change is also playing a role,
-            as changing weather patterns can affect insect populations and the
-            timing of migration. Another major threat to aerial insectivores is
-            the widespread use of pesticides. Many of these chemicals are highly
-            toxic to insects, which can have cascading effects on the food
-            chain. When insect populations decline, the birds that rely on them
-            for food also suffer. To help protect aerial insectivore birds, it
-            is important to support habitat conservation and restoration
-            efforts. This includes preserving intact ecosystems, restoring
-            degraded habitats, and creating protected areas where these birds
-            can thrive. Additionally, reducing pesticide use and promoting
-            sustainable agricultural practices can help to minimize the impact
-            of these chemicals on insect populations. In conclusion, aerial
-            insectivore birds are an important and fascinating group of birds
-            that play a crucial role in maintaining ecosystem health. However,
-            these birds are facing significant threats, including habitat loss,
-            climate change, and pesticide use. To protect these birds and ensure
-            their survival, it is crucial to support conservation efforts that
-            promote habitat preservation and reduce the impact of human
-            activities on their populations.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="container mt-5 mb-5" id="Birds">
-      <h2>Birds</h2>
-      <hr />
-      <div class="card col-md-12 mb-3">
+      <!-- Intro-->
+      <div class="container">
+        <h1>Aerial Insectivores of Iran</h1>
+        <hr class="rounded" />
         <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Common_Swift_%28Apus_apus%29_%2842715255405%29.jpg/800px-Common_Swift_%28Apus_apus%29_%2842715255405%29.jpg"
-              class="card-img-left m-4 rounded"
-              alt="..."
-            />
+          <div class="info col-md m-3">
+            <h3>What are they?</h3>
+            <p>
+              Aerial insectivore birds are a fascinating group of birds that
+              have adapted to feed on insects while in flight. These birds are
+              known for their remarkable agility and speed, which allows them to
+              catch their prey in mid-air.
+            </p>
+            <h3>In Iran</h3>
+            <p>
+              Many of these birds are found in Iran, including Swifts, Swallows,
+              Martins, Bee-eaters, Flycatchers and Warblers.
+            </p>
+            <h3>Population Trend</h3>
+            <p>
+              Unfortunately, the population of aerial insectivore birds
+              worldwide is declining at an alarming rate. According to a study
+              published in the journal Science, aerial insectivores have
+              experienced a population decline of 53% since the 1970s. This
+              trend is particularly concerning, as aerial insectivores are
+              important indicators of ecosystem health.
+            </p>
           </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Swifts</h5>
-              <p class="card-text">
-                Swifts are small to medium-sized birds with long, slender wings
-                and streamlined bodies. They have a distinctive, cigar-shaped
-                silhouette and can fly at high speeds, making them excellent
-                aerial predators. Swifts are found in Iran from April to October
-                and feed primarily on flying insects such as mosquitos, flies,
-                and beetles. They are mostly migratory birds, spending their
-                breeding season in Europe and Asia and migrating to Africa for
-                the winter.
-              </p>
-
-              <a href="#" class="btn btn-primary">Go to the bird page</a>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card col-md-12 mb-3">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Barn_Swallow_flight_by_Dr._Raju_Kasambe_DSC_8068_%281%29.jpg/800px-Barn_Swallow_flight_by_Dr._Raju_Kasambe_DSC_8068_%281%29.jpg"
-              class="card-img-left m-4 rounded"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Swallows</h5>
-              <p class="card-text">
-                Swallows are small, agile birds with pointed wings and forked
-                tails. They are found in a variety of habitats, including open
-                fields, forests, and wetlands. Swallows feed primarily on flying
-                insects such as flies, mosquitos, and butterflies. They are
-                migratory birds, spending their breeding season in Europe and
-                Asia and migrating to Africa for the winter. In Iran, Swallows
-                can be seen from April to October.
-              </p>
-
-              <a href="#" class="btn btn-primary">Go to the bird page</a>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
+          <div class="info col-md m-3">
+            <h3>The Conservation and threats</h3>
+            <p>
+              There are several factors that are contributing to the decline of
+              aerial insectivore birds. Habitat loss and fragmentation are major
+              threats, as these birds rely on intact ecosystems to find the
+              insects they need to survive. Climate change is also playing a
+              role, as changing weather patterns can affect insect populations
+              and the timing of migration. Another major threat to aerial
+              insectivores is the widespread use of pesticides. Many of these
+              chemicals are highly toxic to insects, which can have cascading
+              effects on the food chain. When insect populations decline, the
+              birds that rely on them for food also suffer. To help protect
+              aerial insectivore birds, it is important to support habitat
+              conservation and restoration efforts. This includes preserving
+              intact ecosystems, restoring degraded habitats, and creating
+              protected areas where these birds can thrive. Additionally,
+              reducing pesticide use and promoting sustainable agricultural
+              practices can help to minimize the impact of these chemicals on
+              insect populations. In conclusion, aerial insectivore birds are an
+              important and fascinating group of birds that play a crucial role
+              in maintaining ecosystem health. However, these birds are facing
+              significant threats, including habitat loss, climate change, and
+              pesticide use. To protect these birds and ensure their survival,
+              it is crucial to support conservation efforts that promote habitat
+              preservation and reduce the impact of human activities on their
+              populations.
+            </p>
           </div>
         </div>
       </div>
-      <div class="card col-md-12 mb-3">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/3/30/Swallow_flying_drinking_2.jpg"
-              class="card-img-left m-4 rounded"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Martins</h5>
-              <p class="card-text">
-                Martins are similar to swallows in appearance and behavior, but
-                they are larger and more robust. They have a distinctive
-                square-shaped tail and a broad, powerful bill. Martins are also
-                aerial insectivores, feeding primarily on flying insects such as
-                mosquitos, flies, and dragonflies. They are migratory birds,
-                spending their breeding season in Europe and Asia and migrating
-                to Africa for the winter. In Iran, Martins can be seen from
-                April to October.
-              </p>
+      <!-- Intro End-->
 
-              <a href="#" class="btn btn-primary">Go to the bird page</a>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card col-md-12 mb-3">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Merops_apiaster_04.jpg/676px-Merops_apiaster_04.jpg"
-              class="card-img-left m-4 rounded"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Bee-eaters</h5>
-              <p class="card-text">
-                Bee-eaters are colorful birds with long, pointed bills and
-                slender bodies. They are known for their vibrant plumage, which
-                often includes shades of green, blue, and yellow. Bee-eaters
-                feed on a variety of insects, including bees, wasps, and
-                dragonflies. They are migratory birds, spending their breeding
-                season in Europe and Asia and migrating to Africa for the
-                winter. In Iran, Bee-eaters can be seen from April to October.
-              </p>
-
-              <a href="#" class="btn btn-primary">Go to the bird page</a>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card col-md-12 mb-3">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Kirjosieppo.jpg"
-              class="card-img-left m-4 rounded"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Flycatchers</h5>
-              <p class="card-text">
-                Flycatchers are small, perching birds with broad, flat bills and
-                short legs. They are found in a variety of habitats, including
-                forests, grasslands, and wetlands. Flycatchers feed primarily on
-                flying insects, but they also take insects from leaves and
-                branches. They are migratory birds, spending their breeding
-                season in Europe and Asia and migrating to Africa for the
-                winter. In Iran, Flycatchers can be seen from April to October.
-              </p>
-
-              <a href="#" class="btn btn-primary">Go to the bird page</a>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="card col-md-12 mb-3">
-        <div class="row">
-          <div class="col-md-4">
-            <img
-              src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Garden_Warbler%2C_UNESCO_Biosphere_Reserve_Swabian_Alb%2C_Germany.jpg/800px-Garden_Warbler%2C_UNESCO_Biosphere_Reserve_Swabian_Alb%2C_Germany.jpg"
-              class="card-img-left m-4 rounded"
-              alt="..."
-            />
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h5 class="card-title">Warblers</h5>
-              <p class="card-text">
-                Warblers are small, active birds with thin, pointed bills and a
-                wide variety of colorful plumage. They are found in a variety of
-                habitats, including forests, shrublands, and wetlands. Warblers
-                feed primarily on insects, including caterpillars, beetles, and
-                flies. They are migratory birds, spending their breeding season
-                in Europe and Asia and migrating to Africa for the winter. In
-                Iran, Warblers can be seen from April to October.
-              </p>
-
-              <a href="#" class="btn btn-primary">Go to the bird page</a>
-              <p class="card-text">
-                <small class="text-muted">Last updated 3 mins ago</small>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </body>
-  <footer class="footer" id="#Contact">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-5">
-          <h5>Artwork and Web-dev by Mot Hakimi 𓅓</h5>
-          <p>
-            Open-source Project Available on
-            <a
-              href="https://github.com/Motiche/Aerial-Insectivores"
-              style="color: blue"
-              >Github <i class="fa fa-github"></i
-            ></a>
-          </p>
-          <hr />
+      <!--Birds cards-->
+      <div class="container mt-5 mb-5" id="Birds">
+        <h2>Birds</h2>
+        <hr />
+        <div class="card col-md-12 mb-3">
           <div class="row">
-            <div class="col-6">
-              <ul class="list-unstyled">
-                <li><a href="">Product</a></li>
-                <li><a href="">Benefits</a></li>
-                <li><a href="">Partners</a></li>
-                <li><a href="">Team</a></li>
-              </ul>
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Common_Swift_%28Apus_apus%29_%2842715255405%29.jpg/800px-Common_Swift_%28Apus_apus%29_%2842715255405%29.jpg"
+                class="card-img-left m-4 rounded"
+                alt="..."
+              />
             </div>
-            <div class="col-6">
-              <ul class="list-unstyled">
-                <li><a href="">Documentation</a></li>
-                <li><a href="">Support</a></li>
-                <li><a href="">Legal Terms</a></li>
-                <li><a href="">About</a></li>
-              </ul>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Swifts</h5>
+                <p class="card-text">
+                  Swifts are small to medium-sized birds with long, slender
+                  wings and streamlined bodies. They have a distinctive,
+                  cigar-shaped silhouette and can fly at high speeds, making
+                  them excellent aerial predators. Swifts are found in Iran from
+                  April to October and feed primarily on flying insects such as
+                  mosquitos, flies, and beetles. They are mostly migratory
+                  birds, spending their breeding season in Europe and Asia and
+                  migrating to Africa for the winter.
+                </p>
+
+                <a href="#" class="btn btn-primary">Go to the bird page</a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="col-md-2">
-          <ul class="nav">
-            <li class="nav-item">
-              <a href="" class="nav-link"
-                ><i class="fa fa-facebook fa-lg"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link"
-                ><i class="fa fa-twitter fa-lg"></i
-              ></a>
-            </li>
-            <li class="nav-item">
-              <a href="" class="nav-link"
-                ><i class="fa fa-instagram fa-lg"></i
-              ></a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-5">
-          <h5 class="text-md-right">Contact Us <i class="fa fa-envelope"></i></h5>
-          <form
-            action="https://formsubmit.co/exister72@gmail.com"
-            method="POST"
-          >
-          <input
-              type="text"
-              name="name" 
-              class="form-control"
-              id="exampleInputEmail1"
-              placeholder="Enter Name"
-            />
-            <input
-              type="email"
-              name="email" 
-              class="form-control mt-1"
-              id="exampleInputEmail1"
-              placeholder="Enter Email"
-            />
+        <div class="card col-md-12 mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/66/Barn_Swallow_flight_by_Dr._Raju_Kasambe_DSC_8068_%281%29.jpg/800px-Barn_Swallow_flight_by_Dr._Raju_Kasambe_DSC_8068_%281%29.jpg"
+                class="card-img-left m-4 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Swallows</h5>
+                <p class="card-text">
+                  Swallows are small, agile birds with pointed wings and forked
+                  tails. They are found in a variety of habitats, including open
+                  fields, forests, and wetlands. Swallows feed primarily on
+                  flying insects such as flies, mosquitos, and butterflies. They
+                  are migratory birds, spending their breeding season in Europe
+                  and Asia and migrating to Africa for the winter. In Iran,
+                  Swallows can be seen from April to October.
+                </p>
 
-            <input
-              class="form-control mt-1"
-              id="exampleMessage"
-              name="message"
-              placeholder="Message"
-              style="height:100px;"
-              required
-            />
-              <button type="submit" class="btn btn-primary btn-md mt-1">
-                Send
-              </button>
-            </fieldset>
-          </form>
+                <a href="#" class="btn btn-primary">Go to the bird page</a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-12 mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/3/30/Swallow_flying_drinking_2.jpg"
+                class="card-img-left m-4 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Martins</h5>
+                <p class="card-text">
+                  Martins are similar to swallows in appearance and behavior,
+                  but they are larger and more robust. They have a distinctive
+                  square-shaped tail and a broad, powerful bill. Martins are
+                  also aerial insectivores, feeding primarily on flying insects
+                  such as mosquitos, flies, and dragonflies. They are migratory
+                  birds, spending their breeding season in Europe and Asia and
+                  migrating to Africa for the winter. In Iran, Martins can be
+                  seen from April to October.
+                </p>
+
+                <a href="#" class="btn btn-primary">Go to the bird page</a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-12 mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3f/Merops_apiaster_04.jpg/676px-Merops_apiaster_04.jpg"
+                class="card-img-left m-4 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Bee-eaters</h5>
+                <p class="card-text">
+                  Bee-eaters are colorful birds with long, pointed bills and
+                  slender bodies. They are known for their vibrant plumage,
+                  which often includes shades of green, blue, and yellow.
+                  Bee-eaters feed on a variety of insects, including bees,
+                  wasps, and dragonflies. They are migratory birds, spending
+                  their breeding season in Europe and Asia and migrating to
+                  Africa for the winter. In Iran, Bee-eaters can be seen from
+                  April to October.
+                </p>
+
+                <a href="#" class="btn btn-primary">Go to the bird page</a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-12 mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/b/b6/Kirjosieppo.jpg"
+                class="card-img-left m-4 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Flycatchers</h5>
+                <p class="card-text">
+                  Flycatchers are small, perching birds with broad, flat bills
+                  and short legs. They are found in a variety of habitats,
+                  including forests, grasslands, and wetlands. Flycatchers feed
+                  primarily on flying insects, but they also take insects from
+                  leaves and branches. They are migratory birds, spending their
+                  breeding season in Europe and Asia and migrating to Africa for
+                  the winter. In Iran, Flycatchers can be seen from April to
+                  October.
+                </p>
+
+                <a href="#" class="btn btn-primary">Go to the bird page</a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card col-md-12 mb-3">
+          <div class="row">
+            <div class="col-md-4">
+              <img
+                src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Garden_Warbler%2C_UNESCO_Biosphere_Reserve_Swabian_Alb%2C_Germany.jpg/800px-Garden_Warbler%2C_UNESCO_Biosphere_Reserve_Swabian_Alb%2C_Germany.jpg"
+                class="card-img-left m-4 rounded"
+                alt="..."
+              />
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Warblers</h5>
+                <p class="card-text">
+                  Warblers are small, active birds with thin, pointed bills and
+                  a wide variety of colorful plumage. They are found in a
+                  variety of habitats, including forests, shrublands, and
+                  wetlands. Warblers feed primarily on insects, including
+                  caterpillars, beetles, and flies. They are migratory birds,
+                  spending their breeding season in Europe and Asia and
+                  migrating to Africa for the winter. In Iran, Warblers can be
+                  seen from April to October.
+                </p>
+
+                <a href="#" class="btn btn-primary">Go to the bird page</a>
+                <p class="card-text">
+                  <small class="text-muted">Last updated 3 mins ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <br />
-  </footer>
-
-  <!-- credits: https://www.codeply.com/p/EJd6H4Ejyi -->
+      <!--Birds cards end-->
+    </main>
+    <footer-component></footer-component>
+  </body>
 </html>
